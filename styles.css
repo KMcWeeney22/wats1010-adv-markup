@@ -2,6 +2,11 @@
 nav ul li{
   display: inline;
 }
+div{
+  position: relative;
+  width: 1263px;
+  height: auto;
+}
 /* changed background photo to fit page so it doesnt repeat or stretch */
 body{
   background-image: URL("http://wallpaper.zone/img/2575145.jpg");
@@ -11,6 +16,8 @@ body{
   min-height: 100%;
   min-width: 100%;
   background-size: cover;
+  font-family: Trebuchet MS;
+  width: static;
 }
 h1{
   color: black;
@@ -22,12 +29,11 @@ a:visited{
 }
 a:hover{
   text-decoration: none;
-  font-weight: bold;
-  font-size: 110%
 }
 a.active{
   font-weight: bold;
-  font-size: 120%;
+  font-size: 110%;
+  text-decoration: none;
 }
 /* border around home, about poe, integration links in the header */
 .top-nav{
@@ -47,6 +53,12 @@ a.active{
   opacity: .6;
   margin: 20px;
   padding: 30px;
+}
+/* changed social links to be horizontal */
+#sidebar li{
+  float: left;
+  list-style-type: none;
+  margin-right: 15px;
 }
 /* floated picture to have text wrap around photo */
 .bio-photo{
@@ -70,11 +82,18 @@ a.active{
 #content p{
   border: 1px solid black;
   background-color: #ffffff;
-  max-width: 65%;
+  max-width: 67.4%;
   opacity: .6;
   padding: 5px;
   border-radius: 3px;
   font-family: Trebuchet MS;
+}
+#crusader{
+  position: absolute;
+  top: 575px;
+  right: 15px;
+  width: 358px;
+  height: 465px;
 }
 /* had to align the first <p> and second <p> so they wasnt over flowing into the bio-photo */
 #p-1{
@@ -132,7 +151,7 @@ sup{
 /* added image to sidebar section on the index.html file. Image of the Sonnet to Science poem in the doc. changed the size of photo. Easy to shift around while position is absolute */
 #sidebar img{
   position: absolute;
-  top: 200x;
+  top: 120px;
   right: 410px;
   width: 380px;
   height: 175px;
@@ -154,6 +173,9 @@ td{
 td:first-letter{
   text-transform: uppercase;
 }
+th{
+  text-align: left;
+}
 caption{
   padding: 14px;
   font-size: 120%;
@@ -173,4 +195,5 @@ footer{
   opacity: .6;
   max-width: 40%;
   padding: 10px;
+  margin-left: 30px;
 }
